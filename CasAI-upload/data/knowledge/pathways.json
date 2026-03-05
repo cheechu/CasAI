@@ -1,0 +1,31 @@
+{
+  "description": "DNA repair and base editing pathways",
+  "version": "1.0",
+  "pathways": [
+    {
+      "id": "ber",
+      "name": "Base Excision Repair",
+      "role": "Processes deaminated bases",
+      "steps": ["glycosylase removes damaged base", "AP endonuclease nicks", "polymerase fills", "ligase seals"],
+      "relevance": "Can revert C→U to C; UGI inhibits uracil glycosylase to improve C→T purity"
+    },
+    {
+      "id": "mismatch_repair",
+      "name": "Mismatch Repair",
+      "role": "Corrects replication errors",
+      "relevance": "Can affect base editor outcomes; typically slower than BER at edited sites"
+    },
+    {
+      "id": "cbe_pathway",
+      "name": "CBE editing pathway",
+      "steps": ["dCas9-gRNA binds target", "R-loop exposes ssDNA", "deaminase converts C→U", "replication/repair yields C→T"],
+      "enzymes_involved": ["dCas9", "cytidine deaminase", "UGI"]
+    },
+    {
+      "id": "abe_pathway",
+      "name": "ABE editing pathway",
+      "steps": ["dCas9-gRNA binds target", "R-loop exposes ssDNA", "TadA converts A→I", "replication yields A→G"],
+      "enzymes_involved": ["dCas9", "TadA"]
+    }
+  ]
+}

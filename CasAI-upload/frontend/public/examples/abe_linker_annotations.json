@@ -1,0 +1,9 @@
+{
+  "simulation": true,
+  "region": "abe_tada_linker",
+  "linker_start": 8,
+  "linker_end": 14,
+  "notes": "ABE TadA-Cas9 linker simulation",
+  "target": "ABE",
+  "test_scenario": "adenine_base_editor"
+}

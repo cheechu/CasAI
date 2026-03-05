@@ -1,0 +1,17 @@
+// Molstar viewer styles (pre-built CSS to avoid SCSS dependency chain issues)
+@import "molstar/build/viewer/molstar.css";
+
+// Tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Global Sass variables (verifies Sass works)
+$casai-primary: #2563eb;
+$casai-text-muted: #6b7280;
+
+// Example: apply to body via a class if needed
+:root {
+  --casai-primary: #{$casai-primary};
+  --casai-text-muted: #{$casai-text-muted};
+}

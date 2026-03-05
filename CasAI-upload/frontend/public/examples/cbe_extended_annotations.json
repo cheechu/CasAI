@@ -1,0 +1,9 @@
+{
+  "simulation": true,
+  "region": "cbe_extended_loop",
+  "linker_start": 5,
+  "linker_end": 18,
+  "notes": "Extended CBE linker - wider editing window test",
+  "target": "CBE",
+  "test_scenario": "extended_editing_window"
+}

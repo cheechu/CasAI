@@ -1,0 +1,9 @@
+{
+  "simulation": true,
+  "region": "loop_620_635",
+  "linker_start": 10,
+  "linker_end": 16,
+  "notes": "Simulation test run - uses knowledge bases for build context",
+  "target": "CBE",
+  "test_scenario": "linker_redesign"
+}

@@ -1,0 +1,5 @@
+@import "molstar/lib/mol-plugin-ui/skin/light.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

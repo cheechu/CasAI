@@ -1,0 +1,7 @@
+{
+  "region": "loop_620_635",
+  "linker_start": 10,
+  "linker_end": 16,
+  "notes": "Sample base editor linker region for redesign",
+  "target": "CBE"
+}

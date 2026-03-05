@@ -1,0 +1,31 @@
+{
+  "description": "CRISPR base editor biology reference",
+  "version": "1.0",
+  "pam_sites": {
+    "SpCas9": "NGG",
+    "SaCas9": "NNGRRT",
+    "Cas12a": "TTTV",
+    "xCas9": "NG"
+  },
+  "editing_windows": {
+    "typical_cbe": "positions 4-8 from PAM (1-indexed)",
+    "typical_abe": "positions 4-8 from PAM",
+    "notes": "Window varies by linker length and deaminase positioning"
+  },
+  "linker_regions": {
+    "description": "Linkers connect Cas9 to deaminase; critical for editing window and efficiency",
+    "common_lengths": "4-15 residues",
+    "design_considerations": ["flexibility", "length", "proline content", "avoiding aggregation"]
+  },
+  "off_target_mechanisms": [
+    "Cas9-independent deaminase activity on ssRNA",
+    "Guide-independent deamination in R-loops",
+    "Similarity to on-target sequence"
+  ],
+  "design_principles": [
+    "Optimize linker length for target window",
+    "Consider PAM accessibility",
+    "Minimize off-target deamination",
+    "Balance editing efficiency vs product purity"
+  ]
+}

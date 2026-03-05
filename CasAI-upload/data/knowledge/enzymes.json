@@ -1,0 +1,58 @@
+{
+  "description": "CRISPR base editor enzymes and deaminases",
+  "version": "1.0",
+  "enzymes": [
+    {
+      "id": "cas9",
+      "name": "Cas9",
+      "type": "nuclease",
+      "role": "DNA binding and cleavage",
+      "variants": ["SpCas9", "SaCas9", "Cas9 nickase", "dCas9"],
+      "pam_sequence": "NGG",
+      "notes": "Catalytically inactive dCas9 used in base editors for targeting without cleavage"
+    },
+    {
+      "id": "apobec1",
+      "name": "APOBEC1",
+      "type": "cytidine_deaminase",
+      "role": "C→T base editing",
+      "substrate": "cytidine",
+      "product": "uridine",
+      "notes": "Rat APOBEC1 commonly used in CBEs; converts C to U in single-stranded DNA"
+    },
+    {
+      "id": "rapobec1",
+      "name": "rAPOBEC1",
+      "type": "cytidine_deaminase",
+      "role": "C→T base editing",
+      "substrate": "cytidine",
+      "product": "uridine",
+      "notes": "Engineered APOBEC1 with reduced off-target activity"
+    },
+    {
+      "id": "tada",
+      "name": "TadA",
+      "type": "adenine_deaminase",
+      "role": "A→G base editing",
+      "substrate": "adenosine",
+      "product": "inosine",
+      "origin": "E. coli tRNA adenine deaminase",
+      "notes": "Evolved TadA variants (TadA-8e) used in ABEs"
+    },
+    {
+      "id": "ugi",
+      "name": "UGI",
+      "type": "inhibitor",
+      "role": "DNA glycosylase inhibitor",
+      "notes": "Prevents base excision repair from reverting C→U edits; improves C→T product purity"
+    },
+    {
+      "id": "be4",
+      "name": "BE4",
+      "type": "base_editor",
+      "components": ["dCas9", "APOBEC1", "UGI"],
+      "editing_window": "positions 4-8 from PAM",
+      "notes": "Fourth-generation CBE with improved efficiency"
+    }
+  ]
+}
